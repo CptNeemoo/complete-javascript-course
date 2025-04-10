@@ -35,3 +35,13 @@ console.log(typeof javascriptIsFun);
 console.log(typeof 23.5);
 
 console.log(typeof null); // object (this is a known bug in JavaScript)
+// let, const and var
+let age = 30;
+age = 31;
+
+const birthYear = 1991;
+// birthYear = 1990; // Error: Assignment to constant variable
+
+var job = 'programmer';
+job = 'teacher';
+console.log(job);
