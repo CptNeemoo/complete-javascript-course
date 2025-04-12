@@ -45,3 +45,39 @@ const birthYear = 1991;
 var job = 'programmer';
 job = 'teacher';
 console.log(job);
+// Basic Operators
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+console.log(ageJonas, ageSarah);
+console.log(ageJonas * 2, ageJonas / 10, 2 ** 3); // 2 ** 3 means 2 to the power of 3
+console.log(ageJonas > ageSarah); // >, <, >=, <=
+console.log(ageSarah >= 18);
+const isFullAge = ageSarah >= 18;
+console.log(now - 1991 > now - 2018); // false0
+console.log('Mark' + ' ' + 'Smith'); // Mark Smith
+// Assignment Operators
+let x = 10 + 5; // 15
+x += 10; // x = x + 10; x = 25
+x *= 4; // x = x * 4; x = 100
+x++; // x = x + 1; x = 101
+x--; // x = x - 1; x = 100
+console.log(x); // 100
+// Comparison Operators
+console.log(ageJonas > ageSarah); // true
+console.log(ageSarah >= 18); // true
+console.log(ageJonas < ageSarah); // false
+console.log(ageJonas <= ageSarah); // false
+console.log(ageJonas == ageSarah); // false
+console.log(ageJonas != ageSarah); // true
+console.log(ageJonas === ageSarah); // false
+console.log(ageJonas !== ageSarah); // true
+// Operator Precedence
+console.log(25 - 10 - 5); // 10
+console.log(2 + 3 * 4); // 14
+console.log(2 ** 3 ** 2); // 512 (2 to the power of (3 to the power of 2))
+console.log((2 + 3) * 4); // 20
+console.log(2 + 3 * 4 ** 2); // 50 (2 + (3 * (4 ** 2)))
+console.log(2 + 3 * 4 ** 2 - 5); // 45 (2 + (3 * (4 ** 2)) - 5)
+console.log(2 + 3 * (4 ** 2 - 5)); // 2 + 3 * (16 - 5) = 2 + 3 * 11 = 35
+// Strings and Template Literals
