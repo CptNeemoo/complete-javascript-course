@@ -81,3 +81,28 @@ console.log(2 + 3 * 4 ** 2); // 50 (2 + (3 * (4 ** 2)))
 console.log(2 + 3 * 4 ** 2 - 5); // 45 (2 + (3 * (4 ** 2)) - 5)
 console.log(2 + 3 * (4 ** 2 - 5)); // 2 + 3 * (16 - 5) = 2 + 3 * 11 = 35
 // Strings and Template Literals
+const teacherName = 'Mark';
+const job = 'teacher';
+const year = 1991;
+
+const Jonas = "I'm " + teacherName + ', a ' + (2025 - year) + ' years old ' + job + '!';
+console.log(Jonas);
+const JonasNew = `I'm ${teacherName}, a ${2025 - year} years old ${job}!`;
+console.log(JonasNew);
+console.log(`String with \n\
+multiple \n\
+lines`);
+console.log(`String with
+multiple
+lines`);
+// Taking Decisions: if / else Statements
+const personAge = 19;
+const isOldEnough = personAge >= 18;
+if (isOldEnough) {
+    console.log('Sarah can start driving license 🚗');
+}
+else {
+    const yearsLeft = 18 - personAge;
+    console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+}
+// Type Conversion and Coercion
